@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video src="Midia/meuvideo.mp4" muted autoplay controls width="500" loop></video>
+
+    <video src="Midia/meuvideo.m4v"></video>
+    <video src="Midia/meuvideo.ogv"></video>
+    <video src="Midia/meuvideo.webm"></video>
+
+    <video autoplay poster="imagens/Corinthians_simbolo.png" controls width="500" loop>
+        <source src="Midia/meuvideo.mp4" type="video/mp4">
+        <source src="Midia/meuvideo.m4v" type="videos/mp4">
+        <source src="Midia/meuvideo.ogv" type="videos/ogg">
+        <source src="Midia/meuvideo.webm" type="videos/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+    <p>Pegar videos do Pexels</p>
+
+    <h1>Inserindo videos do youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3hng-hmSv2Y?si=Rins8Bacvw-algU1&amp;start=681" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--No compartilhar do youtube "incorporar" não funcionou-->
+</body>
+</html>

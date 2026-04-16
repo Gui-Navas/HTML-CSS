@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS 
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = filho
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #4d0803;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: #e08e8e;
+        }
+
+        .especial::before {
+            content: '\27F6 ';
+        }
+
+        .especial::after {
+            content: ' \27F5';
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.tiktok.com/@ligue1/video/7621935155615255829?is_from_webapp=1&sender_device=pc&web_id=7329300638922966534" target="_blank" class="especial">Endrick</a></li>
+        <li><a href="https://www.tiktok.com/@rayzon523/video/7611863693420203286?is_from_webapp=1&sender_device=pc&web_id=7329300638922966534" target="_blank" class="especial">Neymar</a></li>
+        <li><a href="https://www.tiktok.com/@ocoringa_cortes/video/7623255327009541383?is_from_webapp=1&sender_device=pc&web_id=7329300638922966534" target="_blank">Coringa</a></li>
+    </ul>
+</body>
+</html>
