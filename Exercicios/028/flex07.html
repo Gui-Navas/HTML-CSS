@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Flex Box</title>
     <style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
         
 div#grande {
     background-color: black;
-    width: 600px;
-    height: 250px;
+    width: 1100px;
+    height: 600px;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
@@ -18,25 +27,27 @@ div#grande {
 
 div#pequeno {
     background-color: lightgrey;
-    width: 300px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
     text-align: center;
     font-weight: bolder;
 
     margin: 10px;
     border-radius: 20px;
-    padding: 10px;
-    flex: auto;
+    padding: 20px;
 }
 
     </style>
 </head>
 <body>
     <div id="grande">
-        <div id="pequeno">A</div>
-        <div id="pequeno">B</div>
-        <div id="pequeno">C</div>
-        <div id="pequeno">D</div>
+        <div id="pequeno" class="i1">A</div>
+        <div id="pequeno" class="i2">B</div>
+        <div id="pequeno" class="i3">C</div>
+        <div id="pequeno" class="i4">D</div>
+        <div id="pequeno" class="i5">E</div>
+        <div id="pequeno" class="i6">F</div>
+        <div id="pequeno" class="i7">G</div>
     </div>
 </body>
 </html>

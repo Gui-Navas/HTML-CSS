@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Box</title>
+    <style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+        
+div#grande {
+    background-color: black;
+    height: 250px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+
+div#pequeno {
+    background-color: lightgrey;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    font-weight: bolder;
+
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+div.i1 {
+    order: 0;
+}
+
+div.i2 {
+    order: 0;
+}
+
+div.i3 {
+    order: 0;
+}
+
+div.i4 {
+    order: 0;
+}
+
+div.i5 {
+    order: 0;
+}
+
+div.i6 {
+    order: 0;
+}
+
+div.i7 {
+    order: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div id="grande">
+        <div id="pequeno" class="i1">A</div>
+        <div id="pequeno" class="i2">B</div>
+        <div id="pequeno" class="i3">C</div>
+        <div id="pequeno" class="i4">D</div>
+        <div id="pequeno" class="i5">E</div>
+        <div id="pequeno" class="i6">F</div>
+        <div id="pequeno" class="i7">G</div>
+    </div>
+</body>
+</html>
