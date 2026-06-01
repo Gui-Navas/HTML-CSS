@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Box</title>
+    <style>
+        
+div#grande {
+    background-color: black;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div#pequeno {
+    background-color: lightgrey;
+
+    border: 4px solid blue;
+    text-align: center;
+    flex-basis: 150px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="grande">
+        <div id="pequeno" class="i1">A</div>
+        <div id="pequeno" class="i2">Outro conteúdo</div>
+        <div id="pequeno" class="i3">C</div>
+        <div id="pequeno" class="i4">Conteúdo um pouco maior</div>
+        <div id="pequeno" class="i5">E</div>
+        <div id="pequeno" class="i6">Conteúdo maior ainda, que vai ocupar mais espaço</div>
+        <div id="pequeno" class="i7">G</div>
+    </div>
+</body>
+</html>
