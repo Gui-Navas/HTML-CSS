@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Box</title>
+    <style>
+        
+div#grande {
+    background-color: black;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div#pequeno {
+    background-color: lightgrey;
+
+    border: 2px solid blue;
+    text-align: center;
+    
+}
+
+div.i1 {
+/*  flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 200px; */
+
+    flex: 1 0 200px; 
+}
+
+div.i2 {
+/*  flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 150px; */
+
+    flex: 1 1 150px;
+}
+
+div.i3 {
+/*   flex-shrink: 8;  
+    flex-grow: 1;
+    flex-basis: auto; */
+
+    flex: 1 8 auto;
+}
+    </style>
+</head>
+<body>
+    <div id="grande">
+        <div id="pequeno" class="i1">A</div>
+        <div id="pequeno" class="i2">B</div>
+        <div id="pequeno" class="i3">C</div>
+    </div>
+</body>
+</html>
