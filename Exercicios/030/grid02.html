@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid blue;
+            height: 250px;
+            display: grid;
+            gap: 10px;
+            grid-template:repeat(3, auto) / repeat(3, auto);
+
+            place-items: start center;
+            place-content: space-between end;
+        }
+
+        div#item {
+            border: 4px solid #6e0101;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item">A</div>
+        <div id="item">B</div>
+        <div id="item">C</div>
+        <div id="item">D</div>
+        <div id="item">E</div>
+        <div id="item">F</div>
+        <div id="item">G</div>
+    </div>
+</body>
+</html>
